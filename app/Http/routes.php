@@ -11,6 +11,8 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->version();
-});
+$app->get('/', 'IndexController@home');
+
+$app->post('/process', 'ProcessController@process');
+
+$app->get('/confirm', 'IndexController@confirm');
