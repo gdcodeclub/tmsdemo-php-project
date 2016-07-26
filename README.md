@@ -33,3 +33,11 @@ Run `composer install`.
 > composer install
 
 Refresh `tmsdemo.dev`.
+
+## Feature Roadmap for this TMS Client
+
+* capture messageID to db
+* sent message info page display by messageID
+* send to multiple recipients
+* send to sms
+* send to multiple sms recipients
