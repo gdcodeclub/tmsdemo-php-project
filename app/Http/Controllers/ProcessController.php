@@ -21,7 +21,11 @@ class ProcessController extends Controller
 
     	$subject = $request->input('subject');
     	$message = $request->input('message');
-    	$recipient = $request->input('recipient');
+    	//$recipient = $request->input('recipient');
+        $recipients = explode(",", $request->input('recipient'));
+    
+        //var_dump($recipients);
+        //die();
 
     	$client = new Client($_ENV["TMS_KEY"],$_ENV["TMS_ENDPOINT"]);
         $email = new Email($client);
@@ -32,7 +36,11 @@ class ProcessController extends Controller
 		  'click_tracking_enabled' => true,
 		  'open_tracking_enabled' => true,
 		));
+
+        //for each var in recipients run the email recipients->build
+        foreach ($recipients as $request => $recipient) {   
 		$email->recipients->build(array('email' => $recipient));
+    }    
 		$email->post();
 
         var_dump($email);
