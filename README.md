@@ -32,6 +32,8 @@ Run `composer install`.
 
 > composer install
 
+Copy the .env.example file to .env, and fill in your own TMS_KEY and TMS_ENDPOINT url
+
 Refresh `tmsdemo.dev`.
 
 ## Feature Roadmap for this TMS Client
