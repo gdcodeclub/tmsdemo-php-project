@@ -43,3 +43,5 @@ Refresh `tmsdemo.dev`.
 * send to multiple recipients
 * send to sms
 * send to multiple sms recipients
+* update Web form to toggle email or sms form elements
+* be able to send to email or sms recipients
