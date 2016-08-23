@@ -22,8 +22,10 @@ class ProcessController extends Controller
     	$subject = $request->input('subject');
     	$message = $request->input('message');
     	//$recipient = $request->input('recipient');
+        //split the recipient email address by comma delimiter
         $recipients = explode(",", $request->input('recipient'));
     
+        //to display above recipients variable
         //var_dump($recipients);
         //die();
 
@@ -32,12 +34,12 @@ class ProcessController extends Controller
         $email->build(array(
 		  'subject' => $subject,
 		  'body' => $message,
-		  'from_name' => 'Richard Fong - TMS Stage',
+		  'from_name' => 'Richard Fong - PHP Client TMS Stage',
 		  'click_tracking_enabled' => true,
 		  'open_tracking_enabled' => true,
 		));
 
-        //for each var in recipients run the email recipients->build
+        //foreach var in recipients - see above - run the email recipients->build
         foreach ($recipients as $request => $recipient) {   
 		$email->recipients->build(array('email' => $recipient));
     }    
