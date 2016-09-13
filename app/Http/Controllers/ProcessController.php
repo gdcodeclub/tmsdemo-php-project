@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \Tms\Client;
 use \Tms\Resource\Email;
+use \Tms\Resource\Sms;
 
 class ProcessController extends Controller
 {
@@ -23,7 +24,10 @@ class ProcessController extends Controller
     	$message = $request->input('message');
     	//$recipient = $request->input('recipient');
         //split the recipient email address by comma delimiter
+        //allows for multiple recipients
         $recipients = explode(",", $request->input('recipient'));
+        $emailCheck = $request->input('emailCheck');
+        $smsCheck = $request->input('emailSms');
     
         //to display above recipients variable
         //var_dump($recipients);
@@ -46,8 +50,9 @@ class ProcessController extends Controller
 		$email->post();
 
         var_dump($email);
+        //var_dump($request->all());
 
-        return "<p>Subject: $subject<br />Message: $message<br />Recipient: $recipient</p>";
+        return "<p>Subject: $subject<br />Message: $message<br />Recipient: $recipient</p>$smsCheck</br>";
     }
 
 }
