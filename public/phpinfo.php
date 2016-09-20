@@ -1,5 +1,6 @@
 <?php
 
+
 $words = "my words";
 
 echo "$words";
@@ -7,3 +8,5 @@ echo "$words";
 phpinfo();
 
  ?>
+</body>
+</html>
