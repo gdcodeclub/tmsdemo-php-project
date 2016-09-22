@@ -61,7 +61,7 @@ class ProcessController extends Controller
 
             //foreach var in recipients - see above - run the email recipients->build
             foreach ($recipients as $request => $recipient) {   
-                $sms->recipients->build(array('sms' => $recipient));
+                $sms->recipients->build(array('phone' => $recipient));
             }    
             $sms->post();
         }    
