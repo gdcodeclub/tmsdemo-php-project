@@ -23,16 +23,11 @@ class ProcessController extends Controller
 
         	$subject = $request->input('subject');
         	$message = $request->input('message');
-        	//$recipient = $request->input('recipient');
+
             //split the recipient email address by comma delimiter
             //allows for multiple recipients
             $recipients = explode(",", $request->input('recipient'));
             $deliveryType = $request->input('emailSms');
-            //$smsCheck = $request->input('emailSms');
-        
-            //to display above recipients variable
-            //var_dump($recipients);
-            //die();
 
         	$client = new Client($_ENV["TMS_KEY"],$_ENV["TMS_ENDPOINT"]);
             $email = new Email($client);
@@ -69,7 +64,14 @@ class ProcessController extends Controller
         //var_dump($email);
         //var_dump($request->all());
 
-        return "<p>Subject: <br />Message: $message<br />Recipient: $recipient</p>$deliveryType</br>";
+        // return "<p>Subject: <br />Message: $message<br />Recipient: $recipient</p>$deliveryType</br>";
+        return redirect()->route('confirm');
+
+    }
+
+    public function confirm(Request $request){
+        var_dump($request->all());
+        return "Here we are in the confirm!";
     }
 
 }

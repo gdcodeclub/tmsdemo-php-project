@@ -15,4 +15,4 @@ $app->get('/', 'IndexController@home');
 
 $app->post('/process', 'ProcessController@process');
 
-$app->get('/confirm', 'IndexController@confirm');
+$app->get('/confirm', [ 'as' => 'confirm', 'uses' => 'ProcessController@confirm'] ) ;
