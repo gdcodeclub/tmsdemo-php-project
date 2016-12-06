@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 2168e835fe6d46e20be268a9f9330e4a8c53b3c8 richardgfong <richardgfong@gmail.com> 1473775676 -0500	branch: Created from HEAD
+2168e835fe6d46e20be268a9f9330e4a8c53b3c8 097d9774a9dbf9d4a68e402d815337d9ef84e0a0 richardgfong <richardgfong@gmail.com> 1473775741 -0500	commit: added JS to identify email radio button
+097d9774a9dbf9d4a68e402d815337d9ef84e0a0 56129b512b0962aa3bb261132fb9baded8562581 richardgfong <richardgfong@gmail.com> 1474380209 -0500	commit: add email or sms logic in ProcessController
+56129b512b0962aa3bb261132fb9baded8562581 8a65d130bf5b803a8f44720d275f440ceff89bd8 richardgfong <richardgfong@gmail.com> 1474568654 -0500	commit: update sms foreach loop and change sms to phone in ProcessController

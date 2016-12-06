@@ -1,47 +1,40 @@
-# TMS Demo - Project
+<p align="center"><a href="https://laravel.com" target="_blank"><img width="150"src="https://laravel.com/laravel.png"></a></p>
 
-## Install Composer Globally
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
-First, CD to your home dir.
+## About Laravel
 
-> cd ~
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
 
-Run the commands at the top of this page: https://getcomposer.org/download/
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Move composer.phar to be a global command. (might need to sudo)
+Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
 
-> mv composer.phar /usr/local/bin/composer
+## Learning Laravel
 
-## Clone this Project
+Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
 
-(This assumes you cloned the Vagrant project first. https://github.com/gdcodeclub/tmsdemo-php-vagrant)
+If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
-CD to your workspace.
+## Contributing
 
-> cd /path/to/your/workspace
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
 
-Clone this project into a folder NEXT TO the TMS Demo Vagrant project. Keeping the default folder name.
+## Security Vulnerabilities
 
-> git clone https://github.com/gdcodeclub/tmsdemo-php-project.git
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
-CD to this project root.
+## License
 
-> cd tmsdemo-php-project/
-
-Run `composer install`.
-
-> composer install
-
-Copy the .env.example file to .env, and fill in your own TMS_KEY and TMS_ENDPOINT url
-
-Refresh `tmsdemo.dev`.
-
-## Feature Roadmap for this TMS Client
-
-* capture messageID to db
-* sent message info page display by messageID
-* send to multiple recipients
-* send to sms
-* send to multiple sms recipients
-* update Web form to toggle email or sms form elements
-* be able to send to email or sms recipients
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
