@@ -1,0 +1,22 @@
+0000000000000000000000000000000000000000 b9592e028431519584912710185cce0d17d21457 richardgfong <richardgfong@gmail.com> 1463154559 -0500	clone: from https://github.com/gdcodeclub/tmsdemo-php-project.git
+b9592e028431519584912710185cce0d17d21457 1d1e181a641b337f43e44f306ee67d6fd5598cf1 richardgfong <richardgfong@gmail.com> 1463157761 -0500	commit: Ignore html/ that is created by Puphpet.
+1d1e181a641b337f43e44f306ee67d6fd5598cf1 b9592e028431519584912710185cce0d17d21457 richardgfong <richardgfong@gmail.com> 1463157825 -0500	reset: moving to HEAD~1
+b9592e028431519584912710185cce0d17d21457 f75924058d891592e7c30d3f97590b0b71e6cc5e richardgfong <richardgfong@gmail.com> 1464380470 -0500	commit: added index and process controllers
+f75924058d891592e7c30d3f97590b0b71e6cc5e a3a4455ef0a08880b6e345bb6210938bdb049705 richardgfong <richardgfong@gmail.com> 1464380594 -0500	commit: added index view
+a3a4455ef0a08880b6e345bb6210938bdb049705 44916cc714eeb4546723cb28d5d27fe0a9d6048b richardgfong <richardgfong@gmail.com> 1464380650 -0500	commit: updated routes
+44916cc714eeb4546723cb28d5d27fe0a9d6048b 3bf5ce059fb51cd440ec615372790140ce505122 richardgfong <richardgfong@gmail.com> 1469540654 -0500	commit: moved token and endpoint to environment variable
+3bf5ce059fb51cd440ec615372790140ce505122 f3a21937d320930054606f4274752b3f9f1afd3c richardgfong <richardgfong@gmail.com> 1469540678 -0500	pull: Merge made by the 'recursive' strategy.
+f3a21937d320930054606f4274752b3f9f1afd3c e00b43efeef3518cef004fe93f4e07d122eeea7f richardgfong <richardgfong@gmail.com> 1469540978 -0500	commit: Add feature roadmap in readme file
+e00b43efeef3518cef004fe93f4e07d122eeea7f 3b5c5719f54d2e2e7b9d617c5a02db85e0c8e95d richardgfong <richardgfong@gmail.com> 1469734643 -0500	commit: updated code to accept a comma delimited list of recipients
+3b5c5719f54d2e2e7b9d617c5a02db85e0c8e95d 05eee915cf838742db58edf1430305d2e464833d richardgfong <richardgfong@gmail.com> 1470146022 -0500	pull: Fast-forward
+05eee915cf838742db58edf1430305d2e464833d dde95fd07d23eeb67d7e4cb9c65822746d0c8afa richardgfong <richardgfong@gmail.com> 1471963265 -0500	commit: js script to display/hide form element based on radio button
+dde95fd07d23eeb67d7e4cb9c65822746d0c8afa 2168e835fe6d46e20be268a9f9330e4a8c53b3c8 richardgfong <richardgfong@gmail.com> 1471963933 -0500	commit: update to README.md file
+2168e835fe6d46e20be268a9f9330e4a8c53b3c8 2168e835fe6d46e20be268a9f9330e4a8c53b3c8 richardgfong <richardgfong@gmail.com> 1473775676 -0500	checkout: moving from master to emailCheck9-13
+2168e835fe6d46e20be268a9f9330e4a8c53b3c8 097d9774a9dbf9d4a68e402d815337d9ef84e0a0 richardgfong <richardgfong@gmail.com> 1473775741 -0500	commit: added JS to identify email radio button
+097d9774a9dbf9d4a68e402d815337d9ef84e0a0 56129b512b0962aa3bb261132fb9baded8562581 richardgfong <richardgfong@gmail.com> 1474380209 -0500	commit: add email or sms logic in ProcessController
+56129b512b0962aa3bb261132fb9baded8562581 8a65d130bf5b803a8f44720d275f440ceff89bd8 richardgfong <richardgfong@gmail.com> 1474568654 -0500	commit: update sms foreach loop and change sms to phone in ProcessController
+8a65d130bf5b803a8f44720d275f440ceff89bd8 2168e835fe6d46e20be268a9f9330e4a8c53b3c8 richardgfong <richardgfong@gmail.com> 1474984435 -0500	checkout: moving from emailCheck9-13 to master
+2168e835fe6d46e20be268a9f9330e4a8c53b3c8 4a75b46ee8cdef7d8972257d5b9913189af6617d richardgfong <richardgfong@gmail.com> 1474984503 -0500	pull: Fast-forward
+4a75b46ee8cdef7d8972257d5b9913189af6617d b74f7cc8ad006319e8785871637f5f902d9f572f richardgfong <richardgfong@gmail.com> 1477401824 -0500	checkout: moving from master to more_routes
+b74f7cc8ad006319e8785871637f5f902d9f572f b74f7cc8ad006319e8785871637f5f902d9f572f richardgfong <richardgfong@gmail.com> 1478008546 -0500	checkout: moving from more_routes to emailConfirm
+b74f7cc8ad006319e8785871637f5f902d9f572f 84b5aca027b06e193e10e00ef3ecb36c57ebb789 richardgfong <richardgfong@gmail.com> 1478008608 -0500	commit: update to ProcessConroller to tray and get request data into confirm controller
