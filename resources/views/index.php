@@ -38,7 +38,7 @@ function emailSmsCheck() {
 }
     
 </script>
-<p><span style="font-size: 6px;">Using Lumen - A PHP Micro-Framework By Laravel</span></p>
+<p><span style="font-size: 6px;">Using Laravel 5.3 - A PHP Framework</span></p>
 </body>
 </head>
 </html>

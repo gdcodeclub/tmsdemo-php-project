@@ -19,6 +19,7 @@ class ProcessController extends Controller
     public function process(Request $request)
     {
         $deliveryType = $request->input('emailSms');
+        $responseData = NULL;
 
         if ($deliveryType == 'emailSend') {
         	$subject = $request->input('subject');
@@ -44,7 +45,7 @@ class ProcessController extends Controller
                 $email->recipients->build(array('email' => $recipient));
             }   
 
-    		$email->post();
+            $responseData = $email->post();
         } else {
             $message = $request->input('message');
             $recipients = explode(",", $request->input('recipient'));
@@ -59,20 +60,27 @@ class ProcessController extends Controller
                 $sms->recipients->build(array('phone' => $recipient));
             }
 
-            $sms->post();
+            $responseData = $sms->post();
         }    
 
         // $request->session()->flash('data', $request);
-
+        // var_dump($responseData);
+        $request->session()->put('data', $responseData);
         return redirect()->route('confirm');
-
     }
 
     public function confirm(Request $request) 
     {
-        // var_dump($request->session());
-        // var_dump($request->session()->get('data'));
-        
+        //var_dump($request->session());
+        $getTMSResponse = $request->session()->get('data');
+        var_dump($getTMSResponse->id);
+
+        //future sql to insert into tbl
+        //"INSERT INTO messages (`tms_id`, `subject`) VALUES (
+        //    $getTMSResponse->id,
+        //    $getTMSResponse->subject
+        //)"
+
         return "Success! Your messages is being delivered right now!";
     }
 
