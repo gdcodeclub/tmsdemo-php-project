@@ -9,9 +9,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 use \Tms\Client;
 use \Tms\Resource\Email;
 use \Tms\Resource\Sms;
+
 
 class ProcessController extends Controller
 {
@@ -74,12 +77,23 @@ class ProcessController extends Controller
         //var_dump($request->session());
         $getTMSResponse = $request->session()->get('data');
         var_dump($getTMSResponse->id);
+        var_dump($getTMSResponse->subject);
 
         //future sql to insert into tbl
         //"INSERT INTO messages (`tms_id`, `subject`) VALUES (
         //    $getTMSResponse->id,
         //    $getTMSResponse->subject
-        //)"
+        // )"
+        
+        // using db facade
+        DB::insert(
+            'INSERT INTO messages (body, subject, message_id, created_at) values (?, ?, ?, Now())', 
+            [
+                $getTMSResponse->body,
+                $getTMSResponse->subject,
+                $getTMSResponse->id
+            ]
+        );
 
         return "Success! Your messages is being delivered right now!";
     }
