@@ -76,8 +76,8 @@ class ProcessController extends Controller
     {
         //var_dump($request->session());
         $getTMSResponse = $request->session()->get('data');
-        var_dump($getTMSResponse->id);
-        var_dump($getTMSResponse->subject);
+        //var_dump($getTMSResponse->id);
+        //var_dump($getTMSResponse->subject);
 
         //future sql to insert into tbl
         //"INSERT INTO messages (`tms_id`, `subject`) VALUES (
@@ -95,7 +95,7 @@ class ProcessController extends Controller
             ]
         );
 
-        return "Success! Your messages is being delivered right now!";
+        return "Success! Your messages is being delivered right now!<br><br>Subject: " . $getTMSResponse->subject . "<br>Body: " .$getTMSResponse->body;
     }
 
 }
