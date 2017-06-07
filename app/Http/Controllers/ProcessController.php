@@ -86,16 +86,17 @@ class ProcessController extends Controller
         // )"
         
         // using db facade
+        $subject = !empty($getTMSResponse->subject) ? "'$getTMSResponse->subject'" : NULL;
         DB::insert(
             'INSERT INTO messages (body, subject, message_id, created_at) values (?, ?, ?, Now())', 
             [
                 $getTMSResponse->body,
-                $getTMSResponse->subject,
+                $subject,
                 $getTMSResponse->id
             ]
         );
 
-        return "Success! Your messages is being delivered right now!<br><br>Subject: " . $getTMSResponse->subject . "<br>Body: " .$getTMSResponse->body;
+        return "Success! Your messages is being delivered right now!<br><br>Subject: " . $subject . "<br>Body: " . $getTMSResponse->body;
     }
 
 }
